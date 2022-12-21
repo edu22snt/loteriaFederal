@@ -16,6 +16,7 @@ import javax.swing.JTextArea;
 import javax.swing.JTextField;
 
 import controle.Loterias;
+import enums.LabelsEnum;
 
 /**
  * @author eduardo.andrade
@@ -54,7 +55,7 @@ public class LoteriaView extends JFrame {
 	public void initialize() {
 		this.setSize(800, 235);
 		this.setContentPane(getJContentPane());
-		this.setTitle("Loterias V.4");
+		this.setTitle(LabelsEnum.TITULO.getDescricao());
 		adicionarComponentesNoLayout();
 		ckMegaSena.setSelected(true);
 		acaoCheckbox();
@@ -369,15 +370,15 @@ public class LoteriaView extends JFrame {
 	}
 
 	private void definirNomeComponente() {
-		lbNumerosSorteados.setText("Números Sorteados:");
-		ckMegaSena.setText("Mega Sena");
-		ckLotofacil.setText("Lotofácil 15");
-		ckLotofacil16.setText("Lotofácil 16");
-		ckLotofacil17.setText("Lotofácil 17");
-		ckLotofacil18.setText("Lotofácil 18");
-		ckQuina.setText("Quina");
-		btnSortear.setText("Sortear");
-		btnFechar.setText("Fechar");
+		lbNumerosSorteados.setText(LabelsEnum.NUMEROSSORTEADOS.getDescricao());
+		ckMegaSena.setText(LabelsEnum.MEGASENA.getDescricao());
+		ckLotofacil.setText(LabelsEnum.LOTOFACIL15.getDescricao());
+		ckLotofacil16.setText(LabelsEnum.LOTOFACIL16.getDescricao());
+		ckLotofacil17.setText(LabelsEnum.LOTOFACIL17.getDescricao());
+		ckLotofacil18.setText(LabelsEnum.LOTOFACIL18.getDescricao());
+		ckQuina.setText(LabelsEnum.QUINA.getDescricao());
+		btnSortear.setText(LabelsEnum.BTNSORTEAR.getDescricao());
+		btnFechar.setText(LabelsEnum.BTNFECHAR.getDescricao());
 	}
 
 	private void definirTamanhoComponentes() {
